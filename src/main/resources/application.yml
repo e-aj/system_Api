@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    #key：后必须加空格，否则执行报错
+    url: jdbc:mysql://localhost:3306/student?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: ******
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      show-sql: true
+      properties:
+        hibernate:
+          formate_sql: true
+server:
+  port: 8081
